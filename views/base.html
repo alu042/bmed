@@ -59,11 +59,16 @@
     <div class="gcb-nav gcb-complex" id="gcb-nav-x">
       <div class="gcb-aux">
         <ul>
+          <li {% if navbar.forum %}class='active'{% endif %}>
+            <a href="/announcements">Announcements</a>
+          </li>
           <li {% if navbar.course %}class='active'{% endif %}>
             <a href="/course">Course</a>
           </li>
           <li {% if navbar.forum %}class='active'{% endif %}>
             <a href="/forum">Forum</a>
+          <li {% if navbar.forum %}class='active'{% endif %}>
+            <a href="/student/home">My Profile</a>
           </li>
           {% if logoutUrl %}
           <li class="pull-right">
