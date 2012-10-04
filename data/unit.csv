@@ -1,0 +1,6 @@
+id,type,unit_id,title,release_date,now_available
+1,A,Pre,Pre-course assessment,,True
+2,U,1,Introduction to modelling MRI and image processing,available July 10,True
+3,U,2,Water diffusion and diffusion tensor MR Imaging,available July 11,True
+4,U,3,Blood perfusion and dynamic susceptibility contrast MR imaging,available July 12,True
+5,A,Fin,Post-course assessment,,True
