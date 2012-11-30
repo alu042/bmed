@@ -30,7 +30,8 @@ urls = [
   ('/forum', utils.ForumHandler),
   ('/announcements', utils.AnnouncementsHandler),
   ('/courseinfo', utils.CourseInfoHandler),
-  ('/wiki', utils.WikiHandler)
+  ('/wiki', utils.WikiHandler),
+ ('/resources', utils.ResourcesHandler)
   ]
 
 app = webapp2.WSGIApplication(urls, debug=True)

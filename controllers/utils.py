@@ -171,3 +171,16 @@ class WikiHandler(BaseHandler):
     self.render('wiki.html')
 
 
+"""
+Handler for Resources page
+"""
+class ResourcesHandler(BaseHandler):
+
+  def get(self):
+    navbar = {'resources':True}
+    self.templateValue['navbar'] = navbar
+    user = users.get_current_user()
+    if user:
+      self.templateValue['email'] = user.email()
+      self.templateValue['logoutUrl'] = users.create_logout_url('/')
+    self.render('resources.html')
