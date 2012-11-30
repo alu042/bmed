@@ -2,7 +2,7 @@
 
 {% block top_content %}
 
-    <div class="gcb-cols">
+    <div class="gcb-cols">1
       <div class="gcb-col-11 gcb-aside">
         <div class="gcb-col-55">
           <!--FIXME: Add the course title here.-->

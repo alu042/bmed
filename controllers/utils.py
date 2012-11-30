@@ -124,3 +124,50 @@ class ForumHandler(BaseHandler):
       self.templateValue['email'] = user.email()
       self.templateValue['logoutUrl'] = users.create_logout_url('/')
     self.render('forum.html')
+
+
+"""
+Handler for Course Info page
+"""
+class CourseInfoHandler(BaseHandler):
+
+  def get(self):
+    navbar = {'courseinfo':True}
+    self.templateValue['navbar'] = navbar
+    user = users.get_current_user()
+    if user:
+      self.templateValue['email'] = user.email()
+      self.templateValue['logoutUrl'] = users.create_logout_url('/')
+    self.render('courseinfo.html')
+
+
+"""
+Handler for Announcements page
+"""
+class AnnouncementsHandler(BaseHandler):
+
+  def get(self):
+    navbar = {'announcements':True}
+    self.templateValue['navbar'] = navbar
+    user = users.get_current_user()
+    if user:
+      self.templateValue['email'] = user.email()
+      self.templateValue['logoutUrl'] = users.create_logout_url('/')
+    self.render('announcements.html')
+
+
+"""
+Handler for Wiki page
+"""
+class WikiHandler(BaseHandler):
+
+  def get(self):
+    navbar = {'wiki':True}
+    self.templateValue['navbar'] = navbar
+    user = users.get_current_user()
+    if user:
+      self.templateValue['email'] = user.email()
+      self.templateValue['logoutUrl'] = users.create_logout_url('/')
+    self.render('wiki.html')
+
+
