@@ -2,29 +2,32 @@
 
 {% block top_content %}
 
+
   <div>
     <div class="gcb-aux">
       <div class="gcb-cols">
         <div class="gcb-col-6">
-          <iframe id="forum_embed"
+          <iframe id="wiki_embed"
             src="javascript:void(0)"
-            scrolling="no"
+            scrolling="yes"
             frameborder="0"
             width="900"
             height="700">
 	  </iframe>
 
           <script type="text/javascript">
-            document.getElementById("forum_embed").src =
-              "https://groups.google.com/forum/embed/?place=forum/course-builder-forum#!forum/course-builder-forum"
+            document.getElementById("wiki_embed").src =
+              "http://en.wikipedia.org"
           </script>
         </div>
       </div>
     </div>
   </div>
 
+
 {% endblock %}
 
 {% block main_content %}
   
 {% endblock %}
+
